@@ -12,12 +12,12 @@ posts = [
         "titulo": "Post 2",
         "texto": "Olha eu aqui de novo"
     },
-    {
+       {
         "titulo": "Post 3",
-        "texto": "Olha eu aqui de novo"
-    }     
+        "texto": "Novo Post"
+    }
 ]
 
 @app.route('/')
 def exibir_entradas():
-    return render_template("layout.html", entradas=posts)
+    return render_template("exibir_entradas.html", entradas=posts)
